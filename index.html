@@ -1,0 +1,132 @@
+<!DOCTYPE html xmlns:fb="http://ogp.me/ns/fb#">
+<html>
+  <head>
+    <title>Andrea Mannarà - My Resume</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+    <link rel="stylesheet"
+          href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="css/flex-grid.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="css/print.css" />
+  </head>
+  <body>
+    <header class="flex">
+      <section class="picture col-3">
+        <img class="real" src="img/cvhead_real.png" alt="Andrea Mannarà" />
+      </section>
+      <section class="intro col-9">
+        <h1>{{firstname}} {{lastname}}</h1>
+        <h2 class="profession">{{profession}}</h2>
+        <p>
+          {{intro}}
+        </p>
+      </section>
+    </header>
+    <main class="flex">
+      <aside class="col-3">
+        <div class="main-info">
+          <p>{{birthdate}}</p>
+          <p>{{address}}</p>
+          <p>{{phone}}</p>
+          <p><a href="mailto:{{email}}">{{email}}</a></p>
+          <p><a href="{{github}}">{{github}}</a></p>
+          <p><a href="{{linkedin}}">{{linkedin}}</a></p>
+          <p>{{drivel}}</p>
+          <p>{{car}}</p>
+        </div>
+        <div class="skills">
+          <h2>Habilidades</h2>
+          <ul>
+            {{#all_skills}}
+              <li>{{_val}}</li>
+            {{/all_skills}}
+          </ul>
+        </div>
+        <div class="languages">
+          <h2>Idioma</h2>
+          <ul>
+            <li class="mother"><label>Lengua Materna:</label> <span>{{motherLanguage}}<span></li>
+            {{#languages}}
+              <li class="language">
+                <label>{{language}}</label>
+                <p><i class="fa fa-university" title="certificates"></i> {{#certificates}}{{_val}} {{/certificates}}</p>
+                <p><i class="fa fa-assistive-listening-systems" title="comprehension"></i> {{comprehension}}</p>
+                <p><i class="fa fa-commenting-o" title="speaking"></i> {{speaking}}</p>
+                <p><i class="fa fa-pencil" title="writing"></i> writing: {{writing}}</p>
+              </li>
+            {{/languages}}
+          </li>
+        </div>
+        <div class="interest">
+          <h2>Intereses y Hobbies</h2>
+          <ul>
+            <li><i class="fa fa-music"></i> {{#music}}{{_val}} {{/music}}</li>
+            <li><i class="fa fa-film"></i> {{#cinema}}{{_val}} {{/cinema}}</li>
+            <li><i class="fa fa-book"></i> {{#literature}}{{_val}} {{/literature}}</li>
+            <li><i class="fa fa-gamepad"></i> {{#sport}}{{_val}} {{/sport}}</li>
+          </ul>
+        </div>
+        <div class="ballast"></div>
+      </aside>
+      <section class="history col-9">
+        <h3 class="section">Experiencia Laboral</h3>
+        <div class="jobs">
+          {{#jobs}}
+            <article class="flex">
+              <em class="date col-3">{{date}}</em>
+              <div class="entry col-9">
+                <h3>{{title}}</h3>
+                <h4><a href="{{link}}">{{where}}</a></h4> <p>{{subtitle}}</p>
+                <ul class="skills">
+                  {{#skills}}
+                    <li>{{_val}}</li>
+                  {{/skills}}
+                </ul>
+              </div>
+            </article>
+          {{/jobs}}
+        </div>
+        <div style="page-break-after: always;"></div>
+            <article class="flex">
+              <em class="date col-3">{{date}}</em>
+              <div class="entry col-9">
+                <h3>{{title}}</h3>
+                <h4><a href="{{link}}">{{where}}</a></h4> <p>{{subtitle}}</p>
+                <ul class="skills">
+                  {{#skills}}
+                    <li>{{_val}}</li>
+                  {{/skills}}
+                </ul>
+              </div>
+            </article>
+          {{/projects}}
+        </div>
+        <h3 class="section">Educación</h3>
+        <div class="education">
+          {{#education}}
+            <article class="flex">
+              <em class="date col-3">{{date}}</em>
+              <div class="entry col-9">
+                <h3>{{title}}</h3>
+                <h4><a href="{{link}}">{{where}}</a></h4>
+                <p>{{subtitle}}</p>
+                <p>{{grade}}</p>
+                <ul class="skills">
+                  {{#skills}}
+                    <li>{{_val}}</li>
+                  {{/skills}}
+                </ul>
+              </div>
+            </article>
+          {{/education}}
+        </div>
+      </section>
+    </main>
+    <script type="text/javascript" src='js/data.js'></script>
+    <script type="text/javascript" src="js/beardy.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

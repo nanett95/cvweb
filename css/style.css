@@ -1,0 +1,238 @@
+html {
+  background-color: #fdfdfd;
+  font-size: 15px;
+  font-family: "Alegreya Sans", sans-serif;
+  color: #555;
+  line-height: 1.2rem;
+}
+
+body {
+  background-color: #fff;
+  border: 1px solid #bbb;
+  box-sizing: border-box;
+  width: 100%;
+}
+@media only screen and (min-width: 65em) {
+  body {
+    margin: 0 auto;
+    width: 70%;
+  }
+}
+
+h1,
+h2,
+h3.section,
+a {
+  color: #ffb438;
+}
+
+h2.profession {
+  color: #bbb;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  text-align: right;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+br.page-break {
+  display: none;
+}
+
+@media only screen and (min-width: 65em) {
+  header {
+    margin-top: 3rem;
+    flex-direction: row-reverse;
+    padding: 0 1.5rem;
+  }
+}
+
+header .intro {
+  padding: 0.5rem 1rem;
+  text-align: justify;
+}
+header .intro h1 {
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  line-height: 2.3rem;
+  margin: 0;
+  margin-bottom: 0.2rem;
+  text-align: right;
+}
+
+@media only screen and (min-width: 65em) {
+  header .picture {
+    position: relative;
+  }
+}
+
+header .picture .callout {
+  display: none;
+}
+@media only screen and (min-width: 65em) {
+  header .picture .callout {
+    display: block;
+    position: absolute;
+    background-image: url("../img/callout.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 200px;
+    height: 90px;
+    left: 50%;
+    top: 5px;
+    padding-top: 1.2rem;
+    padding-left: 1rem;
+    opacity: 0;
+    transition: 400ms opacity ease-out;
+    z-index: 3;
+  }
+  header .picture .callout.show {
+    opacity: 1;
+  }
+}
+
+header .picture img {
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+}
+header .picture img.pixel {
+  display: none;
+}
+@media only screen and (min-width: 65em) {
+  header .picture img {
+    position: absolute;
+    height: auto;
+    width: 140px;
+    left: 2rem;
+    top: 0.5rem;
+    display: block;
+    transition: 1000ms opacity ease;
+  }
+  header .picture img.pixel {
+    display: block;
+    z-index: 1;
+    opacity: 1;
+  }
+  header .picture img.real {
+    border-radius: 50%;
+  }
+}
+
+main {
+  margin: 0.5rem 2rem;
+}
+main aside {
+  padding: 0.5rem 1rem;
+}
+main aside .main-info {
+  text-align: right;
+}
+main aside h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+@media only screen and (min-width: 65em) {
+  main aside {
+    min-height: 400px;
+  }
+}
+main aside a {
+  font-size: 0.9rem;
+}
+main .skills {
+  display: none;
+}
+@media only screen and (min-width: 65em) {
+  main .skills {
+    display: block;
+  }
+}
+main .skills ul {
+  margin-top: 0.5rem;
+}
+main .skills li {
+  display: inline-block;
+  padding: 0 0.25rem;
+  margin: 0.25rem;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+main .interest {
+  display: none;
+}
+@media only screen and (min-width: 65em) {
+  main .interest {
+    display: block;
+  }
+}
+main .interest li {
+  display: flex;
+  margin-top: 1rem;
+}
+main .interest li i {
+  margin-right: 1rem;
+}
+main .languages .mother {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+main .languages .language {
+  margin-top: 0.5rem;
+}
+main .languages .language label {
+  display: inline-block;
+  text-align: right;
+  width: 100%;
+}
+main .languages .language p {
+  margin-top: 0.3rem;
+}
+main section.history {
+  padding: 1rem;
+  padding-bottom: 6rem;
+  flex: 1;
+}
+main section.history h3.section {
+  margin-top: 1rem;
+}
+@media only screen and (min-width: 65em) {
+  main section.history {
+    border-left: 1px solid #ccc;
+  }
+}
+main section.history article {
+  margin-top: 2rem;
+}
+main section.history article h3 {
+  margin-bottom: 0.5rem;
+}
+main section.history article .date {
+  text-align: right;
+}
+main section.history article .entry {
+  padding-left: 2rem;
+}
+main section.history article .entry p {
+  text-align: justify;
+}
+main section.history article .skills {
+  margin-top: 1rem;
+}
+
+footer {
+  border-top: 1px solid #ddd;
+  padding: 2rem 5rem;
+  margin: 0;
+  background-color: #555;
+  color: #fff;
+}

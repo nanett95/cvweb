@@ -21,7 +21,7 @@ var data = {
       link:'https://zettabytegroup.com.ve/',
       icon:'job',
       type:['job'],
-      skills: ['Jira','API Testing','Scrum','Kanban', 'Debugging','Automation']
+      skills: ['Jira','API Testing','Scrum','Kanban', 'Debugging']
     },
   ],
   education: [

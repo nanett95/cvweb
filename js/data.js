@@ -68,6 +68,15 @@ var data = {
     'linux',
     'json',
   ],
+
+  Aptitudes: [
+    'Detección de bugs',
+    'Metodología Agile',
+    'Control de pruebas',
+    'Alta capacidad de aprendizaje',
+    'Trabajo minucioso y detallista',
+    'Responsabilidad',
+  ],
   music:      ['Baladas','Pop'],
   cinema:     ['Ciencia-Ficción','Románticas', 'Aventura'],
   literature: ['Romántica','','Histórica'],

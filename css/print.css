@@ -5,9 +5,9 @@
   html {
     background-color: #fff;
     font-size: 12px;
-    font-family: 'Alegreya Sans', sans-serif;
+    font-family: "Alegreya Sans", sans-serif;
     color: #555;
-    line-height: 1.20rem;
+    line-height: 1.2rem;
     border: none;
   }
   body {
@@ -54,32 +54,36 @@
     page-break-after: always;
   }
   main {
-    margin: .5rem 0;
+    margin: 0.5rem 0;
     position: relative;
     height: 100%;
   }
   main aside {
     position: relative;
     height: 100%;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
   }
   main aside .main-info {
     text-align: right;
   }
-  main .skills {
+  main .skills,
+  main .aptitudes {
     display: block;
   }
-  main .skills ul {
+  main .skills ul,
+  main .aptitudes ul {
     margin-top: 0.5rem;
   }
-  main .skills li {
+  main .skills li,
+  main .aptitudes {
     display: inline-block;
     padding: 0 0.25rem;
     margin: 0.25rem;
     border: 1px solid #aaa;
     border-radius: 5px;
   }
-  main .skills .ballast {
+  main .skills .ballast,
+  main .aptitudes .ballast {
     bottom: 0;
     height: 4rem;
   }

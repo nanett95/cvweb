@@ -147,18 +147,22 @@ main aside h2 {
 main aside a {
   font-size: 0.9rem;
 }
-main .skills {
+main .skills,
+main .aptitudes {
   display: none;
 }
 @media only screen and (min-width: 65em) {
-  main .skills {
+  main .skills,
+  main .aptitudes {
     display: block;
   }
 }
-main .skills ul {
+main .skills ul,
+main .aptitudes ul {
   margin-top: 0.5rem;
 }
-main .skills li {
+main .skills li,
+main .aptitudes li {
   display: inline-block;
   padding: 0 0.25rem;
   margin: 0.25rem;

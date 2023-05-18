@@ -16,7 +16,7 @@ var data = {
       where:'NGNY Devices',
       subtitle: `
         Máquinas de laboratorio adaptadas a cada cliente que trabajan a través
-        de un sistema que permite automatizar todas las tareas de pre y post análisis
+        de una aplicación que permite automatizar todas las tareas de pre y post análisis
         necesarios en un laboratorio.
       `,
       link:'https://www.ngny.tech/es/',

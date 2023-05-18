@@ -21,7 +21,20 @@ var data = {
       link:'https://zettabytegroup.com.ve/',
       icon:'job',
       type:['job'],
-      skills: ['Jira','API Testing','Scrum','Kanban', 'Debugging']
+      skills: ['Jira','Scrum', 'Debugging','Manual']
+    },
+    {
+      date: 'Marzo 2022 - Actualmente',
+      title: 'Manual QA Tester',
+      where:'NGNY Devices',
+      subtitle: `
+        Aplicación encargada de la distribución y reporte de entrega de alimento.
+        Stack Tecnológica: Apache, VueJS, Cypress, Laravel, PostgreSQL.
+      `,
+      link:'https://www.ngny.tech/es/',
+      icon:'job',
+      type:['job'],
+      skills: ['Debugging', 'Manual', 'Scrum', 'Jira']
     },
   ],
   education: [
@@ -53,7 +66,7 @@ var data = {
     'css',
     'linux',
     'json',
-    'bootstrap', 
+    'bootstrap',
   ],
   music:      ['Baladas','Pop'],
   cinema:     ['Ciencia-Ficción','Románticas', 'Aventura'],

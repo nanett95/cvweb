@@ -69,7 +69,7 @@ var data = {
     'json',
   ],
 
-  Aptitudes: [
+  aptitudes: [
     'Detección de bugs',
     'Metodología Agile',
     'Control de pruebas',

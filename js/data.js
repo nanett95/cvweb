@@ -11,19 +11,6 @@ var data = {
   linkedin:   'https://www.linkedin.com/in/nanett-sandoval/',
   jobs:[
     {
-      date: '2019-2020',
-      title: 'Manual QA Tester',
-      where:'ZeTTaByte',
-      subtitle: `
-        Aplicación encargada de la distribución y reporte de entrega de alimento.
-        Stack Tecnológica: Apache, VueJS, Cypress, Laravel, PostgreSQL.
-      `,
-      link:'https://zettabytegroup.com.ve/',
-      icon:'job',
-      type:['job'],
-      skills: ['Jira','Scrum', 'Debugging','Manual']
-    },
-    {
       date: 'Marzo 2022 - Actualmente',
       title: 'Manual QA Tester',
       where:'NGNY Devices',
@@ -35,6 +22,19 @@ var data = {
       icon:'job',
       type:['job'],
       skills: ['Debugging', 'Manual', 'Scrum', 'Jira']
+    },
+    {
+      date: 'Febrero 2019 - Marzo 2020',
+      title: 'Manual QA Tester',
+      where:'ZeTTaByte',
+      subtitle: `
+        Aplicación encargada de la distribución y reporte de entrega de alimento.
+        Stack Tecnológica: Apache, VueJS, Cypress, Laravel, PostgreSQL.
+      `,
+      link:'https://zettabytegroup.com.ve/',
+      icon:'job',
+      type:['job'],
+      skills: ['Jira','Scrum', 'Debugging','Manual']
     },
   ],
   education: [
